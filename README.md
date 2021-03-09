@@ -100,3 +100,37 @@ Source: https://susanqq.github.io/UTKFace/
 <p align = "center">
 <img src="images/tune_3.jpg" width = "800">
 </p>
+
+
+### Trial 4
+
+#### Changes from previous trial
+- Further reduced the sizes of the dense layers
+<br>
+
+- Base Model: VGG16
+- Top layer: 3 Dense layers
+    - 100 node dense layer
+    - Dropout 0.5
+    - 50 node dense layer
+    - Dropout 0.4
+    - 25 node dense layer
+    - Dropout 0.2
+- Activation: ReLU
+- Optimization: RMSProp (Learning rate - 0.00001)
+- Epochs: 90 (With a frozen base model) + 10 (With fully trainable weights)
+
+#### Interpretation
+- There is significant improvement in the model performance with very little overfitting
+
+<p align = "center">
+<img src="images/trial_4.jpg" width = "800">
+</p>
+
+#### After Tuning
+- The final model has an accuracy of 82% and the final training accuracy is a little more than 88%
+- This has been the best result so far
+
+<p align = "center">
+<img src="images/tune_4.jpg" width = "800">
+</p>
