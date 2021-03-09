@@ -27,18 +27,16 @@ Source: https://susanqq.github.io/UTKFace/
 
 ### Trial 1
 
-- Base Model: VGG16 (Frozen weights - not trainable)
+- Base Model: VGG16 (Weights - frozen/non trainable)
 - Top layer: 2 Dense layers with 1024 and 512 nodes
 - Activation: ReLU
 - Optimization: ADAM (Learning rate - 0.00001)
 - Epochs: 100
 
-Since the base CNN is frozen the weights are not updated while training and the CNN will only be used as a feature generator. The only weights updated will belong to the dense layers. These layers will be trained on our face dataset.
-
 #### Interpretation
 - Training accuracy got close to 100% but validation accuracy peaked at 78% and slowly started dropping down to 72.5%
 - Training loss decreased constantly and stabilized at 0 while validation loss kept increasing and fluctuating and peaked at 1.9.
-- Clearly overfitting.
+- The model is clearly overfitting.
 
 
 <p align = "center">
@@ -46,3 +44,15 @@ Since the base CNN is frozen the weights are not updated while training and the 
 </p>
 
 ### Trial 2
+
+#### Changes
+- Added dropout layers for each fully connected layer
+- Changed the optimization function to RMSProp
+- Learning rate dropped to 0.0001
+- Used L2 Regularization
+
+- Base Model: VGG16 (Weights - frozen/non trainable)
+- Top layer: 2 Dense layers with 1024 and 512 nodes with a dropout layer with 50% drop probability for each dense layer
+- Activation: ReLU
+- Optimization: RMSProp (Learning rate - 0.0001)
+- Epochs: 100
