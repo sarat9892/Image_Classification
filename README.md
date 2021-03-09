@@ -27,6 +27,12 @@ Source: https://susanqq.github.io/UTKFace/
 
 ### Trial 1
 
+- Base Model: VGG16 (Frozen weights - not trainable)
+- Top layer: 2 Dense layers with 1024 and 512 nodes
+- Activation: ReLU
+- Optimization: ADAM (Learning rate - 0.00001)
+- Epochs: 100
+
 
 
 ### Trial 2
