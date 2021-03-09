@@ -1,5 +1,20 @@
-# Face Classifier (Ethnicity)
+# Face Image Classification (Based on ethnicity)
 
-4 trials using  VGG 16 pre trained on imagenet data set
+Face Image Classification is an image classification project. The aim is to use various pre trained deep neural networks and transfer learning to build a classifier that can identify faces of different ethnicities. 
 
-Check the report for more details of each try
+## Data
+
+
+
+Source: https://susanqq.github.io/UTKFace/
+
+
+## Model details
+
+
+## Results
+
+
+### Trial 1
+
+### Trial 2
