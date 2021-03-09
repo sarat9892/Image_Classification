@@ -33,6 +33,9 @@ Source: https://susanqq.github.io/UTKFace/
 - Optimization: ADAM (Learning rate - 0.00001)
 - Epochs: 100
 
+Since the base CNN is frozen the weights are not updated while training and the CNN will only be used as a feature generator. The only weights updated will belong to the dense layers. These layers will be trained on our face dataset.
+
+
 
 
 ### Trial 2
