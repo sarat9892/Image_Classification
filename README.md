@@ -15,6 +15,13 @@ Source: https://susanqq.github.io/UTKFace/
 - Training a deep neural network from scratch requires a lot of time and computing resources. Instead we can use transfer learning where we get a pre-trained model and tune it to our specific data.
 - For the first few experiments we use the VGG 16 Convolutional Neural Network trained on the imagenet dataset
 
+### Basic workflow
+
+- Import the VGG16 CNN from keras without the top dense layers. We will build our own fully connected layers and experiment with them
+- Build our top dense layers
+- Train the model and evaluate using the validation dataset
+- Try and improve the model performance by exploring different methods
+
 
 ## Results
 
