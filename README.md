@@ -57,6 +57,46 @@ Source: https://susanqq.github.io/UTKFace/
 - Optimization: RMSProp (Learning rate - 0.0001)
 - Epochs: 50
 
+#### Interpretation
+- Regularization and dropout layers have reduced overfitting to a large extent.
+- The training and validation losses now show a similar trend unlike the first trial.
+
 <p align = "center">
 <img src="images/trial_2.jpg" width = "800">
+</p>
+
+
+### Trial 3
+
+#### Changes from previous trial
+- Reduced the sizes of the dense layers
+- Added model fine tuning. After the initial training the base model weights are made trainable and the entire neural network is trained for a few more epochs
+<br>
+
+- Base Model: VGG16
+- Top layer: 3 Dense layers
+    - 512 node dense layer
+    - Dropout 0.5
+    - 256 node dense layer
+    - Dropout 0.4
+    - 128 node dense layer
+    - Dropout 0.2
+- Activation: ReLU
+- Optimization: RMSProp (Learning rate - 0.00001)
+- Epochs: 90 (With a frozen base model) + 10 (With fully trainable weights)
+
+#### Interpretation
+- While the model is still overfitting, the validation accuracy has improved and is very close to 80%
+- This means the model is generalizing well on unseen data.
+
+<p align = "center">
+<img src="images/trial_3.jpg" width = "800">
+</p>
+
+#### After Tuning
+- Fine tuning the model improved the validation accuracy beyond 80%
+- But the model is back to overfitting because the training accuracy is very high at 97%
+
+<p align = "center">
+<img src="images/tune_3.jpg" width = "800">
 </p>
