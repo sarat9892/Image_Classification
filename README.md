@@ -45,15 +45,17 @@ Source: https://susanqq.github.io/UTKFace/
 
 ### Trial 2
 
-#### Changes
+#### Changes from previous trial
 - Added dropout layers for each fully connected layer
 - Changed the optimization function to RMSProp
-- Learning rate dropped to 0.0001
-- Used L2 Regularization
-<br>
+- Used L2 Regularization<br>
 
 - Base Model: VGG16 (Weights - frozen/non trainable)
 - Top layer: 2 Dense layers with 1024 and 512 nodes with a dropout layer with 50% drop probability for each dense layer
 - Activation: ReLU
 - Optimization: RMSProp (Learning rate - 0.0001)
-- Epochs: 100
+- Epochs: 50
+
+<p align = "center">
+<img src="images/trial_2.jpg" width = "800">
+</p>
