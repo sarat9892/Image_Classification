@@ -50,7 +50,7 @@ Source: https://susanqq.github.io/UTKFace/
 - Changed the optimization function to RMSProp
 - Learning rate dropped to 0.0001
 - Used L2 Regularization
-
+<br>
 
 - Base Model: VGG16 (Weights - frozen/non trainable)
 - Top layer: 2 Dense layers with 1024 and 512 nodes with a dropout layer with 50% drop probability for each dense layer
