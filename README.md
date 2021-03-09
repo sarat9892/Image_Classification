@@ -11,7 +11,9 @@ Source: https://susanqq.github.io/UTKFace/
 
 ## Model details
 
-I want to try various pre-trained models like Resnet50, Inception, Xception etc but I am starting with VGG 16
+- The trimmed down dataset contains over 14000 images. This dataset is split into training and validation sets (80% training and 20% validation).
+- Training a deep neural network from scratch requires a lot of time and computing resources. Instead we can use transfer learning where we get a pre-trained model and tune it to our specific data.
+- For the first few experiments we use the VGG 16 Convolutional Neural Network trained on the imagenet dataset
 
 
 ## Results
