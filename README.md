@@ -35,6 +35,8 @@ Source: https://susanqq.github.io/UTKFace/
 
 Since the base CNN is frozen the weights are not updated while training and the CNN will only be used as a feature generator. The only weights updated will belong to the dense layers. These layers will be trained on our face dataset.
 
-<img src="images/trial_1.jpg" width = "800" align = "center">
+<p align = "center">
+<img src="images/trial_1.jpg" width = "800">
+</p>
 
 ### Trial 2
