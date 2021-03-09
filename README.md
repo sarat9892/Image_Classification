@@ -48,7 +48,8 @@ Source: https://susanqq.github.io/UTKFace/
 #### Changes from previous trial
 - Added dropout layers for each fully connected layer
 - Changed the optimization function to RMSProp
-- Used L2 Regularization<br>
+- Used L2 Regularization
+<br>
 
 - Base Model: VGG16 (Weights - frozen/non trainable)
 - Top layer: 2 Dense layers with 1024 and 512 nodes with a dropout layer with 50% drop probability for each dense layer
