@@ -10,5 +10,6 @@ Source: https://susanqq.github.io/UTKFace/
 
 ## Experiments
 
-The first experiment is detailed in the 'Experiment_1_VGG16.md' markdown file<br>
-The corresponding notebook can be found at notebooks/faceClassification_VGG.ipynb
+- Experiment 1
+   - The first experiment is detailed in the 'Experiment_1_VGG16.md' markdown file<br>
+   - The corresponding notebook can be found at notebooks/faceClassification_VGG.ipynb
